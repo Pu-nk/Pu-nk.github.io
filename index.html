@@ -3,10 +3,12 @@
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   
-
-  
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  
   <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://yoursite.com/index.html">
@@ -17,186 +19,294 @@
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
+
   
-    <link rel="icon" href="/favicon.png">
-  
+
+  <link rel="icon" href="/css/images/mylogo.jpg">
+  <link rel="apple-touch-icon" href="/css/images/mylogo.jpg">
   
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt; src:url("css/fonts/FuturaPTBold.otf") format("woff");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt-light; src:url("css/fonts/FuturaPTBook.otf") format("woff");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt-italic; src:url("css/fonts/FuturaPTBookOblique.otf") format("woff");font-weight:400;font-style:italic;}
+}
+
+  </style>
   <link rel="stylesheet" href="/css/style.css">
-  <link href="https://cdn.bootcss.com/KaTeX/0.7.1/katex.min.css" rel="stylesheet">
+
+  <script src="/js/jquery-3.1.1.min.js"></script>
+  <script src="/js/bootstrap.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css">
+
+  
+    <link rel="stylesheet" href="/css/home.css">
+  
+
+  
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="/css/vdonate.css">
+  
 
 </head>
 </html>
-<body>
+
+
+  <body>
+
+
+  
+    <header id="header">
+
+	<!-- 背景图模式 -->
+	
+
+    
+      <div id="intrologo" class="intro-logo" style="background-position:center; background-repeat:no-repeat; background-image: url(); background-size: auto 100%;">
+
+      <!-- Support rolling -->  
+        
+        <section class="awSlider">
+          <div class="carousel slide carousel-fade " data-ride="carousel">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+               
+                  
+                    <div class="item active">
+                  
+                    <img id="carousel-img0" src="/css/images/home-bg.jpg">
+                  </div>
+
+                  <!-- 自适应大图 -->
+                  <script>
+                      var img0 = new Image();
+                      var imageTag0 = document.getElementById("carousel-img0");
+                      img0.src = imageTag0.src;
+                      img0.onload=function(){
+                        if (img0.width / img0.height <= document.body.clientWidth / document.body.clientHeight) {
+                          imageTag0.style.width = document.body.clientWidth + "px";
+                        } else {
+                          imageTag0.style.height = document.body.clientHeight + "px";
+                          imageTag0.style.marginLeft = -(document.body.clientHeight * img0.width / img0.height - document.body.clientWidth) / 2 + "px";
+                        }
+                      };
+                  </script>
+                
+                  
+                    <div class="item">
+                  
+                    <img id="carousel-img1" src="/css/images/sample.jpg">
+                  </div>
+
+                  <!-- 自适应大图 -->
+                  <script>
+                      var img1 = new Image();
+                      var imageTag1 = document.getElementById("carousel-img1");
+                      img1.src = imageTag1.src;
+                      img1.onload=function(){
+                        if (img1.width / img1.height <= document.body.clientWidth / document.body.clientHeight) {
+                          imageTag1.style.width = document.body.clientWidth + "px";
+                        } else {
+                          imageTag1.style.height = document.body.clientHeight + "px";
+                          imageTag1.style.marginLeft = -(document.body.clientHeight * img1.width / img1.height - document.body.clientWidth) / 2 + "px";
+                        }
+                      };
+                  </script>
+                
+                  
+                    <div class="item">
+                  
+                    <img id="carousel-img2" src="https://source.unsplash.com/collection/954550/1920x1080">
+                  </div>
+
+                  <!-- 自适应大图 -->
+                  <script>
+                      var img2 = new Image();
+                      var imageTag2 = document.getElementById("carousel-img2");
+                      img2.src = imageTag2.src;
+                      img2.onload=function(){
+                        if (img2.width / img2.height <= document.body.clientWidth / document.body.clientHeight) {
+                          imageTag2.style.width = document.body.clientWidth + "px";
+                        } else {
+                          imageTag2.style.height = document.body.clientHeight + "px";
+                          imageTag2.style.marginLeft = -(document.body.clientHeight * img2.width / img2.height - document.body.clientWidth) / 2 + "px";
+                        }
+                      };
+                  </script>
+                
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href=".carousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Geri</span>
+            </a>
+            <a class="right carousel-control" href=".carousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">İleri</span>
+            </a>
+          </div>
+        </section>
+        <script>
+          $('section.awSlider .carousel').carousel({
+              pause: '',
+              interval: 5000
+          });
+          var startImage = $('section.awSlider .item.active > img').attr('src');
+          $('section.awSlider .carousel').on('slid.bs.carousel', function () {
+              var bscn = $(this).find('.item.active > img').attr('src');
+              $('section.awSlider > img').attr('src', bscn);
+          });
+        </script>
+      
+
+    
+ 
+
+
+    <canvas width="100%" height="100%"></canvas>
+    <script>
+      var c = document.getElementsByTagName('canvas')[0],
+          x = c.getContext('2d'),
+          w = window.innerWidth,
+          h = window.innerHeight,
+          pr = window.devicePixelRatio || 1,
+          f = 90,
+          q,
+          m = Math,
+          r = 0,
+          u = m.PI*2,
+          v = m.cos,
+          z = m.random
+      c.width = w*pr
+      c.height = h*pr
+      x.scale(pr, pr)
+      x.globalAlpha = 0.6
+
+      <!-- 折线Polyline背景 -->
+      
+    </script>
+    
+
+    
+      <div id="homelogo" class="homelogo" style="background: rgba(255,255,255,1);"> 
+    
+
+        
+          <div class="homelogoback"  style="border: 1px solid #404040;" >
+            <h1><a href="#content" id="logo">Hexo</a></h1>
+            <h3></h3>
+            <h5>John Doe</h5>
+            <!-- <p><a href="https://github.com/iTimeTraveler" target="_blank">Github</a></p> -->
+          </div>
+        
+    
+    </div>
+  </div>
+
+  <!-- 自适应主页背景大图 -->
+  
+
+ <!-- home_logo_image居中 -->
+ 
+    <script>
+        var homelogodiv = document.getElementById("homelogo");
+        if (document.all.homelogo.offsetWidth > document.body.clientWidth) {
+          homelogodiv.style.width = document.body.clientWidth + "px";
+          homelogodiv.style.marginLeft = document.body.clientWidth * -0.5 + "px";
+        } else {
+          homelogodiv.style.width = homelogodiv.clientWidth  + "px";
+          homelogodiv.style.marginLeft = (homelogodiv.clientWidth)  * -0.5 + "px";
+        }
+    </script>
+  
+
+  <div class="intro-navigate">
+      <p class="navigater-list">
+        
+          <a id="beautifont" class="main-nav-link" href="/">Home</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/archives">Archives</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/categories">Categories</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/tags">Tags</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/about">About</a>
+        
+      </p>
+  </div>
+
+</header>
+  
   <div id="container">
     <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
       
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+            
+      <div id="content" class="outer">
         
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
+          <section id="main" style="float:none;">
   
-    <article id="post-乡土中国及其近代嬗变" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/12/乡土中国及其近代嬗变/" class="article-date">
-  <time datetime="2019-09-12T00:35:33.000Z" itemprop="datePublished">2019-09-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
+    <article id="post-乡土中国及其近代嬗变"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
     
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
+    <h1 class="thumb" itemprop="name">
       <a class="article-title" href="/2019/09/12/乡土中国及其近代嬗变/">乡土中国及其近代嬗变</a>
     </h1>
   
 
       </header>
     
+    <div class="article-meta">
+      
+	<a href="/2019/09/12/乡土中国及其近代嬗变/" class="article-date">
+	  <time datetime="2019-09-12T00:35:33.000Z" itemprop="datePublished">2019-09-12</time>
+	</a>
+
+      
+      
+      
+
+    </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="乡土中国及其近代嬗变"><a href="#乡土中国及其近代嬗变" class="headerlink" title="乡土中国及其近代嬗变"></a>乡土中国及其近代嬗变</h3><h6 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h6><p>乡土社会是费孝通先生《乡土中国》一书中对古代中国传统社会结构的定义，随着近代三次工业革命浪潮的大变革，传统的中国社会格局被打破，讨论这种变化对于理解当今中国的局势有着相当的指导意义。传统的乡土社会结构是以农业为根基，以家族为社会的基本组成成分，以血缘亲疏关系为纽带，具有差序格局的因地制宜的稳定社会结构，这种社会结构没有孕育民主法治的天然基础，而是形成了以传统常识为主的行为范式为主要原则的礼治。而在近代世界格局的大变动中，中国传统的社会格局被打破，高速的社会变迁速率使得以传统经验为主的礼治难以维系，而小农经济逐渐被工业经济所取代，精细化的社会分工也促成了契约社会的形成。这些扰动都使得当前中国整体的社会结构表现为传统乡土社会的逐步崩解，以及新型契约社会的逐步形成。</p>
-<h4 id="1-前言"><a href="#1-前言" class="headerlink" title="1. 前言"></a>1. 前言</h4><p>$\qquad$《论语》中说：“知者乐水，仁者乐山；知者动，仁者静，知者乐，仁者寿”。我国著名的哲学家冯友兰先生曾在其所著的《中国哲学简史》中用这句话来界定中华文明与西方文明最根本的差异，即中国是内陆国家而希腊是岛国。据人类学家的考证，中华民族的先祖早先活动于帕尔米高原一带，后迁徙至大陆定居。在这片肥沃的土地上逐渐发展出了灿烂的农耕文明，同时也因地制宜形成了其独特的社会结构。费孝通先生将这种传统的社会结构称为“乡土社会”，但自从封建统治瓦解以后由于世界文化的不断交流，这种传统的社会结构逐渐受到挑战并发生了一些有趣的变化，这种现象及其背后的原因都值得探究。</p>
-<h4 id="2-乡土社会的特点"><a href="#2-乡土社会的特点" class="headerlink" title="2. 乡土社会的特点"></a>2. 乡土社会的特点</h4><p>$\qquad$中国传统的乡土社会相比于西方社会有着鲜明的对比。我们在前言中已经提及中华文明是内陆文明，而西方文明是海洋文明，一般来说大陆物质资源丰富，人们以农耕游牧林渔为生；而岛屿则相对资源匮乏，人民以贸易换取生活所需的物资。因此对于生活在内陆的人们，土地是他们赖以生存的根本，这也是费孝通先生将中国传统的社会结构称为“乡土社会”的原因。下面将从不同的方面阐述“乡土社会”的特点，并分析其成因。</p>
-<h5 id="2-1-乡土社会的基本结构"><a href="#2-1-乡土社会的基本结构" class="headerlink" title="2.1 乡土社会的基本结构"></a>2.1 乡土社会的基本结构</h5><p>$\qquad$我曾经一直有一个类似于“李约瑟问题”的疑惑，为什么在中国历史上没有“文艺复兴”这类的思想解放运动。要知道即使是西方也有很长的一段时间处于封建统治下，但是西方社会却在没有受到任何外部因素（文化侵略）的前提下自我觉醒了。读了冯友兰先生的《中国哲学简史》以后，我才发现原来西方社会拥有民主诞生所需要的“天然基础”，造成两种文明间这种差异的最根本因素就是社会的基本结构。前面提到过，中国是一个幅员辽阔、物产丰富的内陆国家，而农业活动又是一项不需要精细化分工的工作。因此，人们并不需要为了合作完成某一件事而生活在一起，费孝通先生将这种只是仅仅因为在一起生长而发生的社会称为礼俗社会，这种社会结构富于地方性，人们的活动范围有地域上的限制，在区域间接触少，生活隔离，各自保持着孤立的生活圈子。而在资源贫瘠的岛屿国家贸易是一件需要社会精细化分工的工作，因此人们必须通力合作才能生存下去。所以说，乡土社会结构的基本单位是家族，而西方社会结构的基本单位则是集体。正因如此，早期中国的封建统治靠血缘维系，就是所谓的“宗法制”；而西方则依靠民主来保障每个人的权力，如罗马共和制。两者都是因地制宜的制度，由于外部环境的不同而造就了两种截然不同的文明。</p>
-<h5 id="2-2-乡土社会的法治"><a href="#2-2-乡土社会的法治" class="headerlink" title="2.2 乡土社会的法治"></a>2.2 乡土社会的法治</h5><p>$\qquad$古代中国是否有“法治”，是个非常值得讨论的问题。古时候有个说法叫“皇权不下县”，这个概念的含义是说由于管理成本太高，皇权无法渗透到基层，乡村仍然处于一种天然的“自治”状态。但事实上，不管是基层乡村还是乃至中央政府都谈不上是真正的“法治”，虽然历朝历代都有修订法律，但我认为这也只能作为一种“人治”的延伸。在上一节中，我们已经提到中西方的社会结构的基本单位有着本质的区别。费孝通先生认为西方社会是团体格局，团体之间的界限分明，而团体内则每个个体一视同仁；而乡土社会的格局则是由亲属关系所主导的，把每个人比作一块石头，将所有的石头投入水中泛起的涟漪相互交织正是就这一格局的形象比喻，不像团体格局一样大家站立在一个平面上，乡土社会的格局随着涟漪愈推愈远，也愈推愈薄，这就是中国社会结构的基本特性，费孝通先生将这种社会格局称之为差序格局。</p>
-<p>$\qquad$然后我们接着讨论为什么乡土社会没有真正的“法治”，早在春秋战国时期，正值各种思想流派百家争鸣、百花斗艳的时代，如儒家、墨家、法家。但是自汉以后，儒家逐渐占据主流，墨家则逐渐式微，而法家则慢慢融入儒家称为中央集权政府的统治工具。古代中国的法律起源于法家，而法家思想又渐渐融入儒家服务于统治者。这就是我为什么说古代历朝历代的法律只是“人治”的延伸，真正的“法治”应当是对所有人一视同仁，我们经常可以看到历史类的文学作品或影视作品里讲“王子犯法与庶民同罪”，但是如果天子犯法呢？那便不叫犯法了，因为皇权凌驾于法律之上，所以真正的“法治”应当以民主为基石，这样才能保障法律的权威。但是中国的社会格局是差序格局，这意味着人与人的地位并不平等，因此中国天然的就不具有法治社会形成的条件。《礼记》中记载的所谓“十伦”，即鬼神、君臣、父子、贵贱、亲疏、夫妇、政事、长幼、上下，都是指差等，这样我们自然就不难理解为什么儒家做大而墨家式微。儒家学派重人伦，提倡以仁为中心的礼、义、忠、恕、孝、悌，这与中国天然形成的社会格局相符；而墨家学派主张“兼爱，非攻”，可视为中国古代民主的雏形，但无奈中国天然就没有孕育民主的土壤，因而逐渐式微。</p>
-<h5 id="2-3-乡土社会的礼治"><a href="#2-3-乡土社会的礼治" class="headerlink" title="2.3 乡土社会的礼治"></a>2.3 乡土社会的礼治</h5><p>$\qquad$乡土社会并不是法治社会，但这并不意味着乡土社会就是“无法无天”。要知道要形成一种稳定的社会结构，必然存在着一种秩序来维系这种稳定。费孝通先生认为，乡土社会是“礼治”的社会。礼就是被社会公认的行为范式，其与法的区别在于法律是依靠政治的权力来推行的，而礼却不需要这种有形的权力来维持，维持礼这种规范的是传统。</p>
-<p>$\qquad$所谓传统，是指社会所积累的经验。评价某种行为是否规范，就看其是否在配合人们的行为以完成社会的任务，是否合乎社会的整体利益。这套方法并不是由每个人自行设计或者某个机构加以规划的，而是通过每一代人们获得的经验知识积累出来的一套帮助人们生活的方法。但这套方法是否适用于每一代人要有个前提，那就是社会的变迁速率要尽可能慢。如果在一个变迁很快的社会，传统的效力是无法保证的。尽管某种生活方法在过去有效，但是只要环境一改变，谁也不能依靠旧的方法去解决心的问题。此时所应付的问题如果要由团体合作的时候，就得大家接受个同意的方法，要保证大家在规定的办法下合作应付共同问题，就得有一种力量凌驾于众人之上来维护众人的权利，这其实就是所谓的“法治”。而乡土社会是安土重迁的，生于斯、长于斯、死于斯的社会。不但人口流动很小，而且人们所取给资源的土地也很少变动。只有在这种环境中，人们才能够相信自己的经验，而且同样相信若祖若父的经验，这是乡土社会礼治能发展起来的根基所在。</p>
-<h4 id="3-近代中国社会结构的嬗变"><a href="#3-近代中国社会结构的嬗变" class="headerlink" title="3. 近代中国社会结构的嬗变"></a>3. 近代中国社会结构的嬗变</h4><p>$\qquad$近代中国社会结构的转型, 人们一般是以19 世纪中叶爆发的鸦片战争, 也即西方资本主义打破中华帝国闭锁的国门为其开端的。有的学者认为, 如果从中国历史的纵深加以考察, 便会发现, 自明代中叶( 16 世纪) 开始, 中国社会及文化已隐然呈现走出中世纪的某些征兆。例如在清同治及光绪前中期( 19世纪60~ 90 年代) , 随着“洋务新政”的拓展, 西学输入渐成规模, 新教育雏形初现, 早期改良思潮由孕育而兴盛。这说明世界格局的变化无不影响着中国的社会格局，这背后的社会学原因值得仔细斟酌。</p>
-<h5 id="3-1-近代中国社会结构转型的特点"><a href="#3-1-近代中国社会结构转型的特点" class="headerlink" title="3.1 近代中国社会结构转型的特点"></a>3.1 近代中国社会结构转型的特点</h5><p>$\qquad$自从封建统治被推翻以来，中国逐渐进入了民主法治的社会。在制度文化层面, 彼此隔绝的静态乡村式社会, 转化为开放的、被各种资讯手段紧密联系起来的动态城市式社会, 同质的单一性社会变为异质多样性社会, 礼俗社会变为法理社会, 人际关系由身份变为契约, “宗法-专制”政体被“民主-法治”政体所取代。作为物质文化、制度文化转型的精神先导和思想反映的观念文化, 也在这一过程发生着深刻的变异, 诸如神本转向人本、信仰转向理性、宗教转向科学、教育从少数特权阶层的专利变为为大众所享有。</p>
-<p>$\qquad$中国社会结构的转型具有整体性和复杂性的特征。西方学者认为近代中国的转型, 是由于外国资本主义侵略势力冲击的结果。这一观点我认为并不合理，上一章我们论证了西方制度在中国不具备发展壮大的天然基础，因此我们说外国资本主义侵略势力更多的不过是改变中国的外部环境，而近代中国社会结构的形成则更多的依赖中国社会内部因素的自然演化。</p>
-<h5 id="3-2-近代中国社会结构转型原因之剖析"><a href="#3-2-近代中国社会结构转型原因之剖析" class="headerlink" title="3.2 近代中国社会结构转型原因之剖析"></a>3.2 近代中国社会结构转型原因之剖析</h5><p>$\qquad$古代的中国社会是安土重迁，生于斯、长于斯的乡土社会。土地是人们的“根”，它孕育了古代灿烂的农耕文明，将世世代代的人与自己绑定。但是，自从1840年鸦片战争以来中国被迫接受了工业革命浪潮的洗礼，传统的小农经济受到挑战，而现代工业得到大力发展。时至今日，从事农业活动的劳动力越来越少。日本学者皆川勇在其《中国人口问题》第六章“人口流动化和小城镇政策”中指出1982年中国的城市人口为2.1亿，1987年增加至5亿，而农村人口从8亿减少到5.8亿。越来越多的人口从农村迁移到城市，这些没有血缘关系的人结成地方社群，他们之间的联系是纯粹的地缘，当地传统的血缘社会逐渐被外来人口稀释，这是契约社会形成的基础。同时，工业相对于农业是一个非常需要精细化分工的领域，为了完成生产指标每个人都必须按照符合集体利益的准则来行事，这同样有利于促进社会契约的形成。这种变化的根本内涵在于，传统的乡土社会是依靠礼治，但是当传统经验不再适用于这个日新月异的世界时，社会结构就必须发生改变。这也是为什么在教育由一种特权转变为每一位社会公民享有的权利，因为当社会变迁速率过快时人们不断需要新的知识来指导自己的生活。</p>
-<p>$\qquad$费孝通先生在《乡土中国》一书中提出了横暴权力、同意权力、长老权力以及时势权力，按照这一理论去分析，传统的乡土社会结构是承受着来自皇权的横暴权力，而同时也因为简单的社会分工产生同意权力，长老权力负责指导人们的生活。而现代社会结构横暴权力式微，由于社会分工的精细化更加注重契约精神，社会权力以同意权力为主；而由于高速的社会变迁，传统的长老权力也不适合指导人们的生活，被以探索性知识为代表的时势权力所逐渐取代。</p>
-<p>$\qquad$简而言之，今天的中国处于一个乡土社会结构逐渐崩解，现代社会结构逐渐形成的阶段。因此新型的社会结构既没有完全形成，而传统的乡土社会结构也没有完全消失。我国著名的社会学家郑也夫教授的学生冯军旗博士的博士论文《中县干部》就犀利的指出在县乡级基层单位，仍然受到政治家族的把控。同时，很多偏远地区的基层单位还是处于一种传统的“礼治”状态，民众法律意识淡薄。不过，随着城市化的不断发展和新式教育的普及，传统的乡土社会结构必然会被彻底解构。</p>
-<h4 id="4-结论"><a href="#4-结论" class="headerlink" title="4. 结论"></a>4. 结论</h4><p>$\qquad$总结而言，如今中国的社会结构转入了所谓的“后乡土社会”，其基本性质概括为: 在大中型城市中，契约社会基本形成，原本的血缘纽带被切断，当地社群以由工商业发展出的地缘为主。在我国基层单位，家庭农业、村落和熟悉关系依然在乡村存在和维续，这反映出乡村社会保留着部分“乡土性”特征; 同时当前乡村出现频繁的人口流动，随着乡村流动，乡村结构也已出现了分化和多样化; 此外，随着城市化进程的不断加快以及新式教育的普及，乡村社会空间的公共性越来越强。</p>
-
+        <p class="article-excerpt-content">
+           摘要
+乡土社会是费孝通先生《乡土中国》一书中对古代中国传统社会结构的定义，随着近代三次工业革命浪潮的大变革，传统的中国社会格局被打破，讨论这种变化对于理解当今中国的局势有着相当的指导意义。传统的乡土社会结构是以农业为根基，以家族为社会的基本组成成分，以血缘亲疏关系为纽带，具有差序格局的因地制宜的稳定社会结构，这种社会结构没有孕育民主法治的天然基础，而是形成了以传统常识为主的行为范式为主要原则的礼治。而在近代世界格局的大变动中，中国传统的社会格局被打破，高速的社会变迁速率使得以传统经验为主...
+        </p>
+        <p class="article-more-link">
+          <a href="/2019/09/12/乡土中国及其近代嬗变/#more">Read More</a>
+        </p>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/09/12/乡土中国及其近代嬗变/" data-id="ck0fyqvuk0002ystnhfke1y69" class="article-share-link">Share</a>
       
       
+      
+      
+
     </footer>
   </div>
   
 </article>
 
-
-  
-    <article id="post-Hello-World-0" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/12/Hello-World-0/" class="article-date">
-  <time datetime="2019-09-12T00:31:53.000Z" itemprop="datePublished">2019-09-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/12/Hello-World-0/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/09/12/Hello-World-0/" data-id="ck0fyqvu80001ystncjqeh48v" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/12/hello-world/" class="article-date">
-  <time datetime="2019-09-11T23:56:17.587Z" itemprop="datePublished">2019-09-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/12/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/09/12/hello-world/" data-id="ck0fyqvu30000ystng3f42yr9" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
+<!-- Table of Contents -->
 
 
   
@@ -204,82 +314,187 @@
 
 </section>
         
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2019/09/12/乡土中国及其近代嬗变/">乡土中国及其近代嬗变</a>
-          </li>
-        
-          <li>
-            <a href="/2019/09/12/Hello-World-0/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2019/09/12/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
       </div>
+      
+        <div align="center" style="margin-top: 30px;"><hr class="hr" style="margin:0px; height:3px;"></div>
+      
       <footer id="footer">
   
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2019 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
+
+  <div class="container">
+      	<div class="row">
+	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
+	      <p id="copyRightEn">Copyright &copy; 2013 - 2019 Hexo All Rights Reserved.</p>
+	      
+	      
+    		<p class="busuanzi_uv">
+				UV : <span id="busuanzi_value_site_uv"></span> |  
+				PV : <span id="busuanzi_value_site_pv"></span>
+		    </p>
+  		   
+		</div>
+
+		
   </div>
 </footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+    var allheader = document.getElementById("allheader");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight + "px";
+    if (allheader != null) {
+      contentdiv.style.minHeight = document.body.offsetHeight - allheader.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    } else {
+      contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    }
+</script>
     </div>
-    <nav id="mobile-nav">
+    <!-- <nav id="mobile-nav">
   
     <a href="/" class="mobile-nav-link">Home</a>
   
     <a href="/archives" class="mobile-nav-link">Archives</a>
   
-</nav>
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
   <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
   <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
-<script src="/js/script.js"></script>
+<script src="/js/scripts.js"></script>
+
+
+  <script src="/js/home.js"></script>
+
+
+
+
+
+
+
+
+
+
+	<div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+	</script>
+
+
+
 
 
 
   </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="myModalLabel">设置</h2>
+      </div>
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+
+
+      <div class="modal-body">
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
+              正文字号大小
+            </a>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            您已调整页面字体大小
+          </div>
+        </div>
+      
+
+
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="javascript:setBackground();" aria-expanded="true" aria-controls="collapseTwo">
+              夜间护眼模式
+            </a>
+        </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            夜间模式已经开启，再次单击按钮即可关闭 
+          </div>
+        </div>
+
+        <div>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关 于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            Hexo
+          </div>
+          <div class="panel-body">
+            Copyright © 2019 John Doe All Rights Reserved.
+          </div>
+        </div>
+      </div>
+
+
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
 </body>
 </html>
